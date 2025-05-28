@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/base/base.css')}}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/utils/games.css') }}" />
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="{{url_for('home')}}">
+          <img src="{{ url_for('static', filename='/assets/utils/logo.png') }}" alt="logo image" />
+        </a>
+        <h1>GameFitAI</h1>
+      </div>
+      <ul>
+        <li><a href="{{url_for('about')}}">ABOUT</a></li>
+        <li><a href="{{url_for('demo')}}">DEMO</a></li>
+        <li><a href="{{url_for('games')}}">GAMES</a></li>
+        <li><a href="{{url_for('teams')}}">TEAMS</a></li>
+      </ul>
+    </nav>
+    <div class="game-container">
+      <div class="heading">
+        <h1>GAMES</h1>
+        <span>Pick a game, activate AI tracking, and start playing
+          hands-free!</span>
+      </div>
+      <div class="games">
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image.png') }}" alt="" />
+          <h2>SUBWAY SURFERS</h2>
+          <div class="btn" onclick="playGame('https://poki.com/en/g/subway-surfers')">PLAY NOW</div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image (1).png') }}" alt="" />
+          <h2>Temple Run</h2>
+          <div class="btn" onclick="playGame('https://poki.com/en/g/temple-run')">PLAY NOW</div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image (31).jpg') }}" alt="" />
+          <h2>Cybrog Runner</h2>
+          <div class="btn" onclick="playGame('https://playgames.kyabai.com/game/cyborg-runner')">PLAY NOW</div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image (3).png') }}" alt="" />
+          <h2>Tomb Runner</h2>
+          <div class="btn" onclick="playGame('https://games.engineering.com/tomb-runner-1/index.html')">PLAY NOW</div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image (4).png') }}" alt="" />
+          <h2>Temple Run 2: Holi Festival</h2>
+          <div class="btn" onclick="playGame('https://poki.com/en/g/temple-run-2-holi-festival')">PLAY NOW</div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='/assets/images/image (5).png') }}" alt="" />
+          <h2>Temple Run 2: Frozen Shadows </h2>
+          <div class="btn" onclick="playGame('https://poki.com/en/g/temple-run-2-frozen-shadows')">PLAY NOW</div>
+        </div>
+      </div>
+      <div class="msg">MORE GAMES COMING SOON ...</div>
+    </div>
+    <hr size="5" color="white" />
+    <footer>
+      <div class="footer-container">
+        <div class="link">
+          <a href="{{url_for('about')}}">About</a><a href="{{url_for('demo')}}">DEMO</a><a
+            href="{{url_for('games')}}">GAMES</a><a href="{{url_for('teams')}}">TEAMS</a>
+        </div>
+        <div class="connect">
+          <a href="">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyvGKk6t6NQ9b-uuMzMIq9DCS2_b5JGHmF7RFma7Z9i4sCynB2pGdz7WpQLWz5W47gD8&usqp=CAU"
+              alt="" />
+          </a>
+          <a href="">
+            <img src="https://freepnglogo.com/images/all_img/1713419302Black_Facebook_PNG.png" alt="" />
+          </a>
+          <a href="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqUXb5nzX3nN3DlSciJSfUdAKfI3pY350Lw&s"
+              alt="" />
+          </a>
+        </div>
+        <p class="copyright">&copy 2024 Created by Team 8 - GameFitAI</p>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="{{ url_for('static', filename='/js/games.js') }}"></script>
+
+</html>

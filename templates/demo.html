@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='/css/base/base.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='/css/utils/demo.css')}}"
+    />
+    <title>Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          <a href="{{url_for('home')}}">
+            <img
+              src="{{url_for('static',filename='/assets/utils/logo.png')}}"
+              alt="logo image"
+            />
+          </a>
+          <h1>GameFitAI</h1>
+        </div>
+        <ul>
+          <li><a href="{{url_for('about')}}">ABOUT</a></li>
+          <li><a href="{{url_for('demo')}}">DEMO</a></li>
+          <li><a href="{{url_for('games')}}">GAMES</a></li>
+          <li><a href="{{url_for('teams')}}">TEAMS</a></li>
+        </ul>
+      </nav>
+      <div class="section demo">
+        <h1>DEMO</h1>
+        <p>Step-by-Step Guide - How It Works?</p>
+        <div class="step-container">
+          <div class="content">
+            <div class="step">Step 1</div>
+            <div class="title">
+              Start Playing (Access the Game Selection Page)
+            </div>
+            <div class="subtitle">
+              Click “Play Now” on the Home Page OR go directly to the Game
+              Selection Page.
+            </div>
+          </div>
+          <div class="img">
+            <img
+              src="{{url_for('static',filename='assets/images/WhatIsGameFitAi.jpg')}}"
+              alt=""
+            />
+          </div>
+          <div class="buttons">
+            <div class="button active">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="section demo-video">
+        <video autoplay>
+          <source
+            src="{{url_for('static',filename='/assets/videos/running.mp4')}}"
+            type="video/mp4"
+          />
+          <source
+            src="{{url_for('static',filename='/assets/videos/running.mp4')}}"
+            type="video/ogg"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <hr size="5" color="white" />
+      <footer>
+        <div class="footer-container">
+          <div class="link">
+            <a href="{{url_for('about')}}">About</a
+            ><a href="{{url_for('demo')}}">DEMO</a
+            ><a href="{{url_for('games')}}">GAMES</a
+            ><a href="{{url_for('teams')}}">TEAMS</a>
+          </div>
+          <div class="connect">
+            <a href="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyvGKk6t6NQ9b-uuMzMIq9DCS2_b5JGHmF7RFma7Z9i4sCynB2pGdz7WpQLWz5W47gD8&usqp=CAU"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://freepnglogo.com/images/all_img/1713419302Black_Facebook_PNG.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqUXb5nzX3nN3DlSciJSfUdAKfI3pY350Lw&s"
+                alt=""
+              />
+            </a>
+          </div>
+          <p class="copyright">&copy 2024 Created by Team 8 - GameFitAI</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const staticBasePath = "{{ url_for('static', filename='') }}";
+    </script>
+    <script src="{{ url_for('static', filename='/js/demo.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2";
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  /* display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(40deg, #000, #252020); */
+  background-color: #0a0a0a;
+}
+nav {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 3;
+  .logo {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 80px;
+      height: 60px;
+    }
+    h1 {
+      font-weight: 100;
+      margin-left: 5px;
+      color: #fff;
+      font-family: "Orbitron";
+    }
+  }
+}
+nav ul {
+  display: flex;
+  padding-right: 100px;
+  list-style-type: none;
+  li {
+    margin-left: 30px;
+    a {
+      color: #fff;
+      font-family: "Orbitron";
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ccc;
+    }
+  }
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.btn {
+  text-decoration: none;
+  padding: 10px 33px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  border-radius: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 30px;
+  font-family: "Orbitron";
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  .footer-container {
+    .link {
+      a {
+        margin: 40px;
+        color: #fff;
+        font-family: "Orbitron";
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #ccc;
+      }
+    }
+    .connect {
+      margin: 20px;
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+    }
+    .copyright {
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+      font-family: "Orbitron";
+    }
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/base/base.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/utils/about.css')}}" />
+  <title>about</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="{{url_for('home')}}">
+          <img src="{{url_for('static',filename='/assets/utils/logo.png')}}" alt="logo image" />
+        </a>
+        <h1>GameFitAI</h1>
+      </div>
+      <ul>
+        <li><a href="{{url_for('about')}}">ABOUT</a></li>
+        <li><a href="{{url_for('demo')}}">DEMO</a></li>
+        <li><a href="{{url_for('games')}}">GAMES</a></li>
+        <li><a href="{{url_for('teams')}}">TEAMS</a></li>
+      </ul>
+    </nav>
+    <div class="section about">
+      <h1>ABOUT</h1>
+      <p>What GameFit AI is really about.</p>
+      <div class="container">
+        <div class="img">
+          <img src="{{url_for('static',filename='assets/images/WhatIsGameFitAi.jpg')}}" alt="" />
+        </div>
+        <div class="desc">
+          <span>The Future of Gaming</span>
+          <h2>WHAT IS GAMEFIT AI?</h2>
+          <p>
+            GameFit AI is an AI-powered motion tracking system that transforms
+            your body into a game controller. No joysticks. No buttons. Just
+            pure movement-driven gameplay!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section why" id="why">
+      <div class="res">
+        <span>The Future of Gaming</span>
+        <h2>WHY GAMEFIT AI?</h2>
+        <p>
+          GameFit AI uses computer vision and AI to detect body movements and
+          seamlessly map them to game controls, making gaming fun, active, and
+          accessible
+          for everyone—all without the need for extra equipment, while working
+          effortlessly with popular web-based games like Temple Run and Subway
+          Surfers.
+        </p>
+      </div>
+      <div class="img">
+        <img src="{{url_for('static',filename='assets/images/about_image_2.png')}}" alt="" />
+      </div>
+    </div>
+    <div class="section vision-mission">
+      <div class="bg-img">
+        <img src="{{url_for('static',filename='assets/images/Xbox Wallpaper.jpeg')}}" alt="" />
+      </div>
+      <div class="content">
+        <div class="num">01</div>
+        <div class="text">Vision</div>
+        <p>
+          To revolutionize gaming by making it more interactive, inclusive,
+          and movement-driven, ensuring a healthier and more engaging
+          experience for all players.
+        </p>
+      </div>
+      <div class="content">
+        <div class="num">02</div>
+        <div class="text">Mission</div>
+        <p>
+          GameFit AI is committed to leveraging AI-powered motion tracking to
+          turn gaming into an active and immersive experience, eliminating the
+          need for controllers and making gaming more accessible and fun.
+        </p>
+      </div>
+    </div>
+    <hr size="5" color="white" />
+    <footer>
+      <div class="footer-container">
+        <div class="link">
+          <a href="{{url_for('about')}}">About</a><a href="{{url_for('demo')}}">DEMO</a><a
+            href="{{url_for('games')}}">GAMES</a><a href="{{url_for('teams')}}">TEAMS</a>
+        </div>
+        <div class="connect">
+          <a href="">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyvGKk6t6NQ9b-uuMzMIq9DCS2_b5JGHmF7RFma7Z9i4sCynB2pGdz7WpQLWz5W47gD8&usqp=CAU"
+              alt="" />
+          </a>
+          <a href="">
+            <img src="https://freepnglogo.com/images/all_img/1713419302Black_Facebook_PNG.png" alt="" />
+          </a>
+          <a href="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqUXb5nzX3nN3DlSciJSfUdAKfI3pY350Lw&s"
+              alt="" />
+          </a>
+        </div>
+        <p class="copyright">&copy 2024 Created by Team 8 - GameFitAI</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

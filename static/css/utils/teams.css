@@ -1,0 +1,123 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Container to hold everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Main slider container */
+.slider-container {
+    display: flex;
+    gap: 102px;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+
+    /* bg  */
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 0) 100%),
+        url("../../assets/utils/logo.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+    position: relative;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-bottom: -20px;
+}
+
+.image-text {
+    font-size: 18px;
+    margin: 5px 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.thumbnail-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+    height: 300px;
+    position: relative;
+}
+
+.thumbnail {
+    border: 2px, solid white;
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    transform-origin: bottom center;
+}
+
+.thumbnail.active {
+    border: 2px, solid white;
+    border-radius: 20px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.nav-dots {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.nav-dots span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-dots span.active {
+    background-color: white;
+}
+
+.text h3 {
+    font-size: 50px;
+    font-family: "Orbitron";
+}
+
+.text h1 {
+    font-size: 60px;
+    font-family: "Exo 2";
+}
+
+.text p {
+    font-size: 30px;
+    font-family: "Exo 2";
+}

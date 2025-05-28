@@ -1,0 +1,57 @@
+.game-container {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .heading {
+    text-align: center;
+    margin: 10px;
+    h1 {
+      font-family: Orbitron;
+      font-size: 6rem;
+      margin: 20px;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  .games {
+    width: 95%;
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .card {
+      width: 350px;
+      height: 350px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 30px;
+      background-color: rgb(217, 217, 217, 0.1);
+      img {
+        margin: 9px;
+        border-radius: 30px;
+        width: 175px;
+        height: 175px;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 9px;
+      }
+      .btn {
+        margin: 10% auto 0 auto;
+        width: 180px;
+      }
+    }
+  }
+  .msg {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 30px;
+  }
+}

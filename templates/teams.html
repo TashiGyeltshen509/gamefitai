@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/base/base.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/utils/landing.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static',filename='/css/utils/teams.css')}}" />
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="{{url_for('home')}}">
+          <img src="{{url_for('static',filename='/assets/utils/logo.png')}}" alt="logo image" />
+        </a>
+        <h1>GameFitAI</h1>
+      </div>
+      <ul>
+        <li><a href="{{url_for('about')}}">ABOUT</a></li>
+        <li><a href="{{url_for('demo')}}">DEMO</a></li>
+        <li><a href="{{url_for('games')}}">GAMES</a></li>
+        <li><a href="{{url_for('teams')}}">TEAMS</a></li>
+      </ul>
+    </nav>
+    <div class="section">
+      <div class="slider-container">
+        <div class="text">
+          <h3 id="image-text" class="image-text">Description for Image 3</h3>
+          <br />
+          <h1 id="image-text2" class="image-text">Text2 for Image 3</h1>
+          <br />
+          <p id="image-text3" class="image-text">Text3 for Image 3</p>
+        </div>
+
+        <div class="thumbnail-container" id="thumbnail-container"></div>
+      </div>
+
+      <div class="nav-dots" id="nav-dots"></div>
+
+      <hr size="5" color="white" />
+    </div>
+    <div class="footer">
+      <footer>
+        <div class="footer-container">
+          <div class="link">
+            <a href="{{url_for('about')}}">About</a><a href="{{url_for('demo')}}">DEMO</a><a
+              href="{{url_for('games')}}">GAMES</a><a href="{{url_for('teams')}}">TEAMS</a>
+          </div>
+          <div class="connect">
+            <a href="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVyvGKk6t6NQ9b-uuMzMIq9DCS2_b5JGHmF7RFma7Z9i4sCynB2pGdz7WpQLWz5W47gD8&usqp=CAU"
+                alt="" />
+            </a>
+            <a href="">
+              <img src="https://freepnglogo.com/images/all_img/1713419302Black_Facebook_PNG.png" alt="" />
+            </a>
+            <a href="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqUXb5nzX3nN3DlSciJSfUdAKfI3pY350Lw&s"
+                alt="" />
+            </a>
+          </div>
+          <p class="copyright">&copy 2024 Created by Team 8 - GameFitAI</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script>
+    const staticBasePath = "{{ url_for('static', filename='') }}";
+  </script>
+  <script src="{{ url_for('static', filename='/js/teams.js') }}"></script>
+</body>
+
+</html>
